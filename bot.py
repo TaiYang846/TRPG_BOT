@@ -169,9 +169,7 @@ async def resolve_scenario_from_channel(interaction: discord.Interaction, hint: 
 
     if not data:
         await interaction.response.send_message(
-            f"找不到跟這個頻道名稱「{channel_name}」對應的劇本資料😭"
-            "請確認 scenarios 資料夾裡有沒有同名或標題包含該劇本名稱的檔案"
-            "（如果你是在某個頻道底下的討論串裡打指令，也可以確認一下父頻道的名稱有沒有對上）。",
+            f"找不到跟這個頻道名稱「{channel_name}」對應的劇本資料😭",
             ephemeral=True,
         )
         return None, None
@@ -215,7 +213,7 @@ async def scenario_info(interaction: discord.Interaction, 名稱: str):
         # 找不到時，順便提示有哪些劇本可以選
         available = "、".join(SCENARIOS.keys()) or "（目前還沒有收錄任何劇本）"
         await interaction.response.send_message(
-            f"找不到包含「{名稱}」的劇本😮目前收錄的劇本有：{available}",
+            f"找不到包含「{名稱}」的劇本😮",
             ephemeral=True,
         )
         return
@@ -224,7 +222,7 @@ async def scenario_info(interaction: discord.Interaction, 名稱: str):
         # 關鍵字比對到不只一個劇本時，列出來讓使用者確認要打更精確的名稱
         names = "、".join(name for name, _ in matches)
         await interaction.response.send_message(
-            f"「{名稱}」符合好幾個劇本，麻煩打更精確一點的名稱❗❗符合的有：{names}",
+            f"「{名稱}」符合好幾個劇本，麻煩打更精確一點的名稱❗❗",
             ephemeral=True,
         )
         return
@@ -271,7 +269,7 @@ async def ho_check(interaction: discord.Interaction):
     ho_url = data.get("ho_url")
     if not ho_url:
         await interaction.response.send_message(
-            f"「{name}」目前還沒有設定 HO 診斷網址喔！可以到 scenarios/{name}.json 補上 ho_url 欄位。",
+            f"「{name}」沒有HO診斷可以做😪",
             ephemeral=True,
         )
         return
@@ -312,7 +310,7 @@ async def npc_list_auto(interaction: discord.Interaction):
     npcs = data.get("npcs")
     if not npcs:
         await interaction.response.send_message(
-            f"「{name}」目前還沒有登錄任何 NPC 資料喔！可以到 scenarios/{name}.json 補上 npcs 欄位。",
+            f"「{name}」沒有可公開的NPC🔐~~也可能連NPC都沒有~~",
             ephemeral=True,
         )
         return
@@ -337,7 +335,7 @@ async def npc_search(interaction: discord.Interaction, 名稱: str):
 
     if not matches:
         await interaction.response.send_message(
-            f"找不到名稱包含「{名稱}」的 NPC 喔！", ephemeral=True
+            f"找不到名稱包含「{名稱}」的 NPC ", ephemeral=True
         )
         return
 
@@ -371,7 +369,7 @@ async def scenario_by_players(interaction: discord.Interaction, 人數: int):
 
     if not matches:
         await interaction.response.send_message(
-            f"目前沒有找到支援 {人數} 人遊玩的劇本喔！", ephemeral=True
+            f"目前沒有找到支援 {人數} 人遊玩的劇本", ephemeral=True
         )
         return
 
@@ -380,7 +378,7 @@ async def scenario_by_players(interaction: discord.Interaction, 人數: int):
         for name, data in matches
     ]
     await interaction.response.send_message(
-        f"支援 {人數} 人遊玩的劇本：\n" + "\n".join(lines)
+        f"👤 支援 {人數} 人遊玩的劇本：\n" + "\n".join(lines)
     )
 
 
