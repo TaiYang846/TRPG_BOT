@@ -1,6 +1,10 @@
 {
   "author": "○助",
   "url": "https://booth.pm/ja/items/3601506",
+  "aliases": ["葬列"],
+  "image": "https://cdn.discordapp.com/attachments/1507372436889538590/1507372437111570673/image.png?ex=6a640f3a&is=6a62bdba&hm=3b16d56949f8f9b055e3dcd389aa18a958ef6b011dd1075133d1c7feba1d9f99",
+  "players_min": 2,
+  "players_max": 2,
   "background": "現代日本",
   "summary": "你們是怪盜二人組。\n彼此熟悉，卻又保持距離。\n兩人之間唯一約定的事情，便是「不要追問對方的過去」。",
   "public_ho": "• **HO1 - 怪盜**\n你是最近在街頭巷尾引起轟動的怪盗。\n• **HO2 - 贋作師**\n無論任何畫作，只要被你看見，都能模仿出来。",
