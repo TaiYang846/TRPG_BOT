@@ -1,0 +1,20 @@
+{
+  "author": "内山靖二郎",
+  "url": "https://product.kadokawa.co.jp/cthulhu/scenario/entry-537994.html",
+  "aliases": ["もっと食べたい", "無盡食慾"],
+  "image": "https://cdn.discordapp.com/attachments/229504800511754240/1530150571309535353/Fk5DHZ4agAISp8q.png?ex=6a648745&is=6a6335c5&hm=e11400ec0b1d747365ea4050e931eb1f0b7f0285bd3bb4e7b7614206026339d4",
+  "players_min": 2,
+  "players_max": 4,
+  "background": "現代",
+  "summary": "**對那可怕的存在而言，人類扭曲的精神正是最美味的佳餚。**/n/n故事舞台是現代日本，季節為深秋。/n在一次與朋友愉快聚餐的場合，調查員遭遇了一起駭人的事件。自那之後，他們開始受到難以抑制的飢餓感折磨。/n若放任不管，調查員終將迎來恐怖的結局。/n在那之前，他們必須追查事件背後的真兇，找出潛藏於黑暗中的幕後黑手。。",
+  "public_ho": "",
+  "warning": "",
+  "other": "",
+  "ho_url": "",
+  "npcs": {
+    "# 石澤 啓太": {
+      "description": "他是一名自由記者，30歲的男人。他關注的並不是娛樂界的緋聞，而是社會問題。他切身力行的調查這些社會問題撰寫報導，賣給雜誌，以此為生。/n他有傑出的作為記者的能力，卻因為討厭不自由的工作，就算賺不了多少錢還是毫不在意的貫徹著自由撰稿人的原則。從啓太深入取材對象內心世界的報導中，可以感受到他的真誠和熱情。這讓他在業界也漸漸被認同。",
+      "image": "https://cdn.discordapp.com/attachments/1520025764341219498/1527301318207865053/Ishizawa.png?ex=6a640cf2&is=6a62bb72&hm=e02facba294fd517d3813151ab0dd2610f244eace2fdea9127c3a8d7237929a9"
+    }
+  }
+}
