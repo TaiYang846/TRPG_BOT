@@ -154,7 +154,7 @@ async def resolve_scenario_from_channel(interaction: discord.Interaction, hint: 
 
     if not channel_name:
         await interaction.response.send_message(
-            f"這個指令要在有名稱的頻道（文字頻道、語音頻道或論壇貼文）裡面用喔！{hint}",
+            f"這個指令要在有名稱的頻道裡面用喔😉✨{hint}",
             ephemeral=True,
         )
         return None, None
@@ -169,7 +169,7 @@ async def resolve_scenario_from_channel(interaction: discord.Interaction, hint: 
 
     if not data:
         await interaction.response.send_message(
-            f"找不到跟這個頻道名稱「{channel_name}」對應的劇本資料喔！"
+            f"找不到跟這個頻道名稱「{channel_name}」對應的劇本資料😭"
             "請確認 scenarios 資料夾裡有沒有同名或標題包含該劇本名稱的檔案"
             "（如果你是在某個頻道底下的討論串裡打指令，也可以確認一下父頻道的名稱有沒有對上）。",
             ephemeral=True,
@@ -215,7 +215,7 @@ async def scenario_info(interaction: discord.Interaction, 名稱: str):
         # 找不到時，順便提示有哪些劇本可以選
         available = "、".join(SCENARIOS.keys()) or "（目前還沒有收錄任何劇本）"
         await interaction.response.send_message(
-            f"找不到包含「{名稱}」的劇本喔！目前收錄的劇本有：{available}",
+            f"找不到包含「{名稱}」的劇本😮目前收錄的劇本有：{available}",
             ephemeral=True,
         )
         return
@@ -224,7 +224,7 @@ async def scenario_info(interaction: discord.Interaction, 名稱: str):
         # 關鍵字比對到不只一個劇本時，列出來讓使用者確認要打更精確的名稱
         names = "、".join(name for name, _ in matches)
         await interaction.response.send_message(
-            f"「{名稱}」符合好幾個劇本，麻煩打更精確一點的名稱喔！符合的有：{names}",
+            f"「{名稱}」符合好幾個劇本，麻煩打更精確一點的名稱❗❗符合的有：{names}",
             ephemeral=True,
         )
         return
@@ -355,7 +355,7 @@ async def scenario_list(interaction: discord.Interaction):
         await interaction.response.send_message("目前還沒有收錄任何劇本喔！")
         return
 
-    lines = [f"• **{name}**（作者：{data.get('author', '未知')}）" for name, data in SCENARIOS.items()]
+    lines = [f"- **{name}**（作者：{data.get('author', '未知')}）" for name, data in SCENARIOS.items()]
     await interaction.response.send_message("目前收錄的劇本：\n" + "\n".join(lines))
 
 
@@ -376,7 +376,7 @@ async def scenario_by_players(interaction: discord.Interaction, 人數: int):
         return
 
     lines = [
-        f"• **{name}**（{format_player_count(data)}，作者：{data.get('author', '未知')}）"
+        f"- **{name}**（{format_player_count(data)}，作者：{data.get('author', '未知')}）"
         for name, data in matches
     ]
     await interaction.response.send_message(
