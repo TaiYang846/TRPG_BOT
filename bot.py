@@ -88,7 +88,7 @@ def build_scenario_embed(name: str, data: dict) -> discord.Embed:
     embed = discord.Embed(
         title=name,
         url=data.get("url") or None,
-        description=data.get("summary", ""),
+        description=data.get("slogan", ""),
         color=0x8B5CF6,
     )
 
@@ -102,6 +102,9 @@ def build_scenario_embed(name: str, data: dict) -> discord.Embed:
     if data.get("background"):
         embed.add_field(name="📖 背景", value=data["background"], inline=False)
 
+    if data.get("summary"):
+        embed.add_field(name="🌟 概要", value=data["public_ho"], inline=False)
+  
     if data.get("public_ho"):
         embed.add_field(name="🎭 公開HO", value=data["public_ho"], inline=False)
 
