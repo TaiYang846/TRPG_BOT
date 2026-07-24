@@ -103,7 +103,7 @@ def build_scenario_embed(name: str, data: dict) -> discord.Embed:
         embed.add_field(name="📖 背景", value=data["background"], inline=False)
 
     if data.get("summary"):
-        embed.add_field(name="🌟 概要", value=data["public_ho"], inline=False)
+        embed.add_field(name="🌟 概要", value=data["summary"], inline=False)
   
     if data.get("public_ho"):
         embed.add_field(name="🎭 公開HO", value=data["public_ho"], inline=False)
