@@ -4,43 +4,12 @@
 
 ---
 
-## 第一步：申請 Discord 機器人帳號
+## 把機器人邀請進你的伺服器
 
-1. 開啟 https://discord.com/developers/applications
-2. 點右上角「New Application」，取個名字（例如：跑團小幫手）
-3. 左側選單點「Bot」→ 點「Reset Token」→ 複製出現的 Token（**這串文字只會顯示一次，要馬上存起來**）
-4. 在同一頁，把「MESSAGE CONTENT INTENT」開關打開（雖然這個機器人用不到，但養成習慣比較保險）
+https://discord.com/channels/229504800511754240/1498607391522951310/1530135398351765555
+使用網址加入
 
-## 第二步：把 Token 填進專案
-
-1. 把 `.env.example` 改名成 `.env`
-2. 打開 `.env`，把裡面的文字換成你剛剛複製的 Token，例如：
-   ```
-   DISCORD_TOKEN=abcdefg1234567.your.real.token
-   ```
-3. **千萬不要把 `.env` 分享給別人或上傳到公開的 GitHub**，這串 Token 等於你機器人的密碼
-
-## 第三步：安裝環境並執行
-
-需要先安裝 Python 3.9 以上版本（https://www.python.org/downloads/）。
-
-在專案資料夾內開啟終端機（Terminal / 命令提示字元），依序執行：
-
-```bash
-pip install -r requirements.txt
-python bot.py
-```
-
-看到終端機顯示「機器人已上線：xxx」就代表成功了！
-
-## 第四步：把機器人邀請進你的伺服器
-
-1. 回到 Developer Portal，左側選單點「OAuth2」→「URL Generator」
-2. 在 SCOPES 勾選 `bot` 和 `applications.commands`
-3. 在 BOT PERMISSIONS 勾選 `Send Messages`、`Embed Links` 就夠用了
-4. 把畫面最下方產生的網址複製到瀏覽器打開，選擇你的伺服器，點授權
-
-## 第五步：新增/修改你自己的劇本
+## 新增/修改你自己的劇本
 
 打開 `scenarios` 資料夾，**每個劇本是一個獨立的 .json 檔案**，檔名（去掉 `.json`）就是劇本名稱，例如 `scenarios/血染鐘樓.json`。
 
@@ -130,6 +99,7 @@ python bot.py
   "players_min": 3,
   "players_max": 5,
   "background": "背景故事，可以用 \n 換行、** ** 加粗",
+  "slogan": "劇本標語",
   "summary": "概要／劇情簡介",
   "public_ho": "公開HO內容，可以用 \n 換行列出多個 HO，例如：\n• **HO1 - 名稱**\nHO1 的簡短描述\n\n• **HO2 - 名稱**\nHO2 的簡短描述",
   "warning": "特殊警告，沒有就填「無」",
@@ -155,8 +125,9 @@ python bot.py
 | `url` | 劇本的網址（例如論壇貼文、Google Docs），設定後**劇本標題會變成可以點擊的超連結** | 選填 |
 | `image` | 劇本本身的圖片（例如封面圖），會顯示在劇本資訊卡片下方 | 選填 |
 | `players_min` / `players_max` | 遊玩人數的最少／最多人數（整數）。單人本就兩個都填 `1`。填了才會顯示「遊玩人數」欄位，也是 `/人數` 指令篩選用的依據 | 選填 |
-| `background` | 顯示在「背景」欄位，適合放世界觀、開場故事 | 選填 |
-| `summary` | 顯示在卡片最上方（劇情概要） | 建議填寫 |
+| `background` | 顯示在「背景」欄位 | 選填 |
+| `summary` | 劇本介紹 | 建議填寫 |
+| `slogan` | 顯示在卡片最上方 | 選填 |
 | `public_ho` | 顯示在「公開HO」欄位，玩家報名前能看到的角色簡介 | 選填 |
 | `warning` | 顯示在「注意事項」欄位，填「無」的話不會顯示這個欄位 | 選填 |
 | `other` | 顯示在「其他」欄位，留空字串 `""` 就不會顯示這個欄位 | 選填 |
