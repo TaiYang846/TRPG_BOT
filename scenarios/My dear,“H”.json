@@ -1,0 +1,21 @@
+{
+  "author": "ヒンシのシャカイ人",
+  "slogan": "*總有一天，我要帶你離開這個狹小的籠子，*\\n*走向鮮花綻放、陽光穿透樹葉灑落的自由天地，*\\n*走向溫暖而幸福的地方。*",
+  "url": "https://booth.pm/ja/items/4383414",
+  "aliases": [],
+  "image": "https://cdn.discordapp.com/attachments/1509381568362451044/1530397767531368609/018c1425-9527-4765-96f6-891c50fc2ad2_base_resized.png?ex=6a656d7d&is=6a641bfd&hm=af99c93c5fa75e2c059867f5c06110be7e8731ec9d46e4c191d141c1be2b4b00",
+  "players_min": 1,
+  "players_max": 1,
+  "background": "",
+  "summary": "你與生俱來有金色的雙眸，頭頂長著山羊角。\n從小就一直被鎖在房間裡，大人們只說：「你將來會成為神的新娘」。此刻雪白的嫁衣披在身上，你靜靜等待婚禮開始。",
+  "public_ho": "",
+  "warning": "無",
+  "other": "",
+  "ho_url": "",
+  "npcs": {
+    "祖父": {
+      "description": "你的祖父。\\n印象中祖父對你很溫柔，總是把你牽掛在心上。\\n他經常出門遊歷，在家的日子屈指可數，但每次回家看望你時，總會和藹地講述起世界各地的新奇故事。",
+      "image": ""
+    }
+  }
+}
