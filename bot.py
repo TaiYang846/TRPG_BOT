@@ -481,7 +481,7 @@ async def scenario_by_players(interaction: discord.Interaction, 人數: int):
         )
         return
 
-    view = ScenarioSelectView(matches, f"👤 支援 {人數} 人遊玩的劇本，請從下面選單選一個看看～")
+    view = ScenarioSelectView(matches, f"👤 支援 {人數} 人遊玩的劇本有：")
     await interaction.response.send_message(view.content, view=view)
 
 
