@@ -6,8 +6,8 @@
 
 ## 把機器人邀請進你的伺服器
 
-> https://discord.com/oauth2/authorize?client_id=1530098903142371348&permissions=274877959168&integration_type=0&scope=bot
-> 使用網址加入
+ https://discord.com/oauth2/authorize?client_id=1530098903142371348&permissions=274877959168&integration_type=0&scope=bot
+ 使用網址加入
 
 ## 新增/修改你自己的劇本
 
