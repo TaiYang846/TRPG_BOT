@@ -6,9 +6,8 @@
 
 ## 把機器人邀請進你的伺服器
 
-https://discord.com/oauth2/authorize?client_id=1530098903142371348&permissions=274877959168&integration_type=0&scope=bot
-
-使用網址加入
+> https://discord.com/oauth2/authorize?client_id=1530098903142371348&permissions=274877959168&integration_type=0&scope=bot
+> 使用網址加入
 
 ## 新增/修改你自己的劇本
 
@@ -21,7 +20,8 @@ https://discord.com/oauth2/authorize?client_id=1530098903142371348&permissions=2
 
 > 💡 **在 GitHub 網頁上新增劇本檔案的方法**：進到 repository 裡的 `scenarios` 資料夾 → 點 `Add file` → `Create new file` → 檔名直接打成 `劇本名稱.json`（GitHub 會自動放進 scenarios 資料夾底下，只要檔名前面有打 `scenarios/` 或你本來就在這個資料夾頁面裡新增）→ 貼上內容 → `Commit changes`。
 
-> 🛠️ **不想手動對 JSON 格式的話**：可以用附帶的 `[劇本 JSON 產生器](https://taiyang846.github.io/COC/%E5%8A%87%E6%9C%AC%20JSON%20%E7%94%A2%E7%94%9F%E5%99%A8.html)` 這個小工具，打開網頁填表單，就會自動幫你組好格式正確的 JSON 內容，複製貼上到 GitHub 就好，不用擔心漏打逗號、引號這種小細節。
+> 🛠️ **不想手動對 JSON 格式的話**：可以用附帶的 `劇本 JSON 產生器` 這個小工具，打開網頁填表單，就會自動幫你組好格式正確的 JSON 內容，複製貼上到 GitHub 就好，不用擔心漏打逗號、引號這種小細節。
+> https://taiyang846.github.io/COC/%E5%8A%87%E6%9C%AC%20JSON%20%E7%94%A2%E7%94%9F%E5%99%A8.html
 
 ---
 
