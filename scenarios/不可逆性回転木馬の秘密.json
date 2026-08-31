@@ -1,0 +1,18 @@
+{
+  "author": "ぶんどき",
+  "slogan": "*__你們在這一年裡共同解決了很多事件。__*\n*__「約定之日」即將到來。__*",
+  "url": "https://booth.pm/zh-tw/items/8503623",
+  "aliases": [
+    "旋轉木馬"
+  ],
+  "image": "https://media.discordapp.net/attachments/1543793601253871808/1543793601501331466/fb19a9d6-a87d-482b-bcf4-a5e36f31e48f_base_resized.png?ex=6a962954&is=6a94d7d4&hm=09f0667410e316dd82790f7ec871824161b39e3086e6124a38a09a5c7e9ddc7f&=&format=webp&quality=lossless",
+  "players_min": 2,
+  "players_max": 2,
+  "background": "現代日本",
+  "summary": "你們是居住在光之丘地區的偵探及其助手。\n在你們從事偵探行業即將滿一年的某一天，你們接到了一個委托：「希望你們能調查光之丘遊樂園的秘密」。\n那座遊樂園的招牌遊樂設施是一個巨大的旋轉木馬。",
+  "public_ho": "* HO1－偵探\n> 你是一名擁有天才頭腦的偵探。直到1年前你都在監獄里，目前處於假釋期間。\n> 限定23~25歲。 \n* HO2－助手\n> 你是一名刑警，目前以助手的身份監視著HO1。\n> 限定30~35歲。",
+  "warning": "無",
+  "other": "",
+  "ho_url": "",
+  "npcs": {}
+}
