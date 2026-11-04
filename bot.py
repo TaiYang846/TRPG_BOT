@@ -39,6 +39,7 @@ from discord import app_commands
 from dotenv import load_dotenv
 
 import keyword_replies
+import web_server
 
 # 讀取 .env 檔案中的 Token
 load_dotenv()
@@ -498,4 +499,5 @@ async def scenario_random(interaction: discord.Interaction):
     )
 
 
+web_server.start()
 client.run(TOKEN)
