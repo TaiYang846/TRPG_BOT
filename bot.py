@@ -39,6 +39,7 @@ from discord import app_commands
 from dotenv import load_dotenv
 
 import keyword_replies
+import skill_scan
 import web_server
 
 # 讀取 .env 檔案中的 Token
@@ -75,6 +76,9 @@ tree = app_commands.CommandTree(client)
 
 # 掛載「關鍵字自動回應」功能，程式碼完全獨立在 keyword_replies.py 裡
 keyword_replies.setup(client)
+
+# 掛載「技能檢定掃描」功能（/成功技能），程式碼完全獨立在 skill_scan.py 裡
+skill_scan.setup(tree)
 
 
 @client.event
@@ -482,7 +486,7 @@ async def scenario_by_players(interaction: discord.Interaction, 人數: int):
         )
         return
 
-    view = ScenarioSelectView(matches, f"👤 支援 {人數} 人遊玩的劇本有：")
+    view = ScenarioSelectView(matches, f"👤 支援 {人數} 人遊玩的劇本，請從下面選單選一個看看～")
     await interaction.response.send_message(view.content, view=view)
 
 
@@ -499,5 +503,7 @@ async def scenario_random(interaction: discord.Interaction):
     )
 
 
+# 啟動極簡 HTTP 服務（Render 的 Web Service 需要有開埠口，也讓外部定時戳有地方可以戳）
 web_server.start()
+
 client.run(TOKEN)
