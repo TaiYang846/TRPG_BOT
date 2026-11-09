@@ -38,6 +38,7 @@ import discord
 from discord import app_commands
 from dotenv import load_dotenv
 
+import jump_start
 import keyword_replies
 import skill_scan
 import web_server
@@ -79,6 +80,9 @@ keyword_replies.setup(client)
 
 # 掛載「技能檢定掃描」功能（/成功技能），程式碼完全獨立在 skill_scan.py 裡
 skill_scan.setup(tree)
+
+# 掛載「回到開頭」功能（/回到開頭），程式碼完全獨立在 jump_start.py 裡
+jump_start.setup(tree)
 
 
 @client.event
